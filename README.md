@@ -3,7 +3,7 @@
 # Stack de monitoreo básico útilizando Zabbix/Grafana
 
 
-<img src="./assets/images/intro.gif" width="50%">
+<img src="./assets/images/intro.gif" width="80%">
 
 **Índice**
 

@@ -1,7 +1,7 @@
 version: '3.5'
 services:
  zabbix-server:
-  image: zabbix/zabbix-server-mysql:alpine-6.4-latest
+  image: zabbix/zabbix-server-mysql:alpine-6.0-latest
   restart: always
   ports:
    - "10051:10051"
@@ -67,7 +67,7 @@ services:
    com.zabbix.dbtype: "mysql"
    com.zabbix.os: "alpine"
  zabbix-web-apache-mysql:
-  image: zabbix/zabbix-web-apache-mysql:alpine-6.4-latest
+  image: zabbix/zabbix-web-apache-mysql:alpine-6.0-latest
   profiles:
    - all
   ports:
@@ -124,7 +124,7 @@ services:
    com.zabbix.os: "alpine"
 
  zabbix-web-nginx-mysql:
-  image: zabbix/zabbix-web-nginx-mysql:alpine-6.4-latest
+  image: zabbix/zabbix-web-nginx-mysql:alpine-6.0-latest
   restart: always
   ports:
    - "80:8080"
@@ -180,7 +180,7 @@ services:
    com.zabbix.os: "alpine"
 
  zabbix-agent:
-  image: zabbix/zabbix-agent:alpine-6.4-latest
+  image: zabbix/zabbix-agent:alpine-6.0-latest
   restart: always
   ports:
    - "10050:10050"
@@ -218,7 +218,7 @@ services:
    com.zabbix.os: "alpine"
 
  zabbix-snmptraps:
-  image: zabbix/zabbix-snmptraps:alpine-6.4-latest
+  image: zabbix/zabbix-snmptraps:alpine-6.0-latest
   restart: always
   ports:
    - "162:1162/udp"
@@ -245,7 +245,7 @@ services:
    com.zabbix.os: "alpine"
 
  zabbix-web-service:
-  image: zabbix/zabbix-web-service:alpine-6.4-latest
+  image: zabbix/zabbix-web-service:alpine-6.0-latest
   restart: always
   ports:
    - "10053:10053"
